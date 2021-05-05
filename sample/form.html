@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="app/css/styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <img src="app/img/backround_index.jpg" alt="" class="hero__img">
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="app/img/logo.png" alt="">
+            </a>
+            <ul>
+                <li><a href="meni.html">Meni</a></li>
+                <li><a href="form.html">Rezervacija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="onama.html">O nama</a></li>
+            </ul>
+        </nav>
+        <div class="form-holder">
+            <form method="post" action="proces.php/">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="test" id="lname" name="lname" required><br>
+
+                <label for="lname">Telefon:</label><br>
+                <input type="text" id="telbroj" name="telbroj" required><br>
+
+                <label for="timezone">Choose time:</label><br>
+                <select id="timezone" name="timezone" required><br>
+                    <option value="null">--:--</option>
+                    <option value="8:00">8:00</option>
+                    <option value="8:30">8:30</option>
+                    <option value="9:00">9:00</option>
+                    <option value="9:30">9:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                </select><br>
+
+                <label for="vreme">Date:</label><br>
+                <input type="date" id="vreme" name="vreme" required><br>
+
+                <label for="numberofpeople">Broj ljudi:</label><br>
+                <input type="number" id="numberofpeople" name="numberofpeople" max="5" min="1" required>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bar">
+            <ul>
+                <li><a href="meni.html">Our menu</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Culture</a></li>
+            </ul>
+            <a class="logo" href="index.html">
+                <img src="" alt="">
+            </a>
+            <ul>
+                <li><a href="">Events</a></li>
+                <li><a href="">Catering</a></li>
+                <li><a href="">Visit us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="app/css/styles.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="overlay"></div>
+        <img src="app/img/backround_index.jpg" alt="" class="hero__img">
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="app/img/logo.png" alt="">
+            </a>
+            <ul>
+                <li><a href="meni.html">Meni</a></li>
+                <li><a href="form.html">Rezervacija</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="onama.html">O nama</a></li>
+            </ul>
+        </nav>
+        <div class="form-holder">
+            <form method="post" action="proces.php/">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" required><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" required><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required><br>
+            
+                <label for="poruka"> Poruka: </label>
+                <br>
+                <textarea name="message" rows="10" cols="30">Poruka</textarea>
+                 <br><br>
+                <input type="submit">
+              </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-bar">
+            <ul>
+                <li><a href="meni.html">Our menu</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Culture</a></li>
+            </ul>
+            <a class="logo" href="index.html">
+                <img src="" alt="">
+            </a>
+            <ul>
+                <li><a href="">Events</a></li>
+                <li><a href="">Catering</a></li>
+                <li><a href="">Visit us</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
